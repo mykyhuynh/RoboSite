@@ -1,0 +1,69 @@
+  <div class="jumbotron noSpace" style="border-radius: 0px;">
+    <!-- <h>YOUR MOM!!!!!!!</h1>
+    <p class="lead">
+      <img src="images/b1.jpg" width="600" height="450" alt="I'm Yeoman"><br>
+      Robodevils
+    </p>
+    <p><a class="btn btn-lg btn-success" ng-href="#!/movies">Splenttttttdid!<span class="glyphicon glyphicon-ok"></span></a></p> -->
+    <p><strong>Team 1018</strong> is a high-school robotics team from Indianapolis Indiana. We bring STEM opportunitties to our studetns through competitive robotics</p>
+  </div>
+
+  <div class="container-fluid slider noSpace">
+    <img ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage blur"
+         ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+
+        <!-- <a class="arrow prev" href="#!/" ng-click="callNext()"></a>
+        <a class="arrow next" href="#!/" ng-click="nextSlide()"></a> -->
+
+    <nav class="slide-nav">
+      <div class="slide-wrapper">
+        <ul class="dots">
+          <li class="dot" ng-repeat="slide in slides">
+              <a href="#!/" ng-class="{'active':isCurrentSlideIndex($index)}"
+              ng-click="setCurrentSlideIndex($index);"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+
+  <div class="row marketing noSpace noSpace-top white margin-left">
+    <p class="left-image">
+      <img src="frc.png" width="180" height="150" alt="I'm Yeoman">
+    </p>
+    <div class="words-right">
+      <!-- <h4><strong>Mission Statement</strong></h4>
+      <p>
+        3 guarantess
+        - Death
+        - Taxes
+        - !018 will be world champs
+      </p> -->
+
+      <h4><strong>What is frc</strong></h4>
+      <p>
+        FIRST is an international organization which uses competitive robotics as a vehicle for promoting science & technology. FIRST allows high school students to work side by side with professional mentors to learn skills ranging from engineering to marketing, animation and business.
+      </p>
+    </div>
+  </div>
+
+    <div class="row marketing noSpace-top gray margin-left last-radius">
+    <p class="right-image">
+      <img src="stem.png" width="180" height="150" alt="I'm Yeoman">
+    </p>
+    <div class="words-left">
+      <!-- <h4><strong>Mission Statement</strong></h4>
+      <p>
+        3 guarantess
+        - Death
+        - Taxes
+        - !018 will be world champs
+      </p> -->
+
+      <h4><strong>What is STEM</strong></h4>
+      <p>
+        STEM is a curriculum based on the idea of educating students in four specific disciplines — science, technology, engineering and mathematics — in an interdisciplinary and applied approach. Rather than teach the four disciplines as separate and discrete subjects, STEM integrates them into a cohesive learning paradigm based on real-world applications.      
+      </p>
+    </div>
+  </div>

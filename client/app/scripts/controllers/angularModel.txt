@@ -1,0 +1,24 @@
+(function() {
+  'use strict';
+  angular
+    .module('APPNAME')
+    .controller('CTRL', CTRL);
+
+    //all the stuff you want
+  MovieAddCtrl.$inject = ['$scope', 'Movie', '$location'];
+
+  function MovieAddCtrl($scope, Movie, $location){
+  //example
+    var vm = $scope;
+
+    vm.movie = {};
+
+    vm.saveMovie = saveMovie;
+
+    function saveMovie() {
+      Movie.post(vm.movie).then(function() {
+        $location.path('/movies');
+      });
+    }
+  }
+})();

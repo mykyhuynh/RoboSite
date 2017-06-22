@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)http://localhost:9000/#!/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="./localhost_files/main.css">
+    <link rel="stylesheet" href="./localhost_files/pike.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="yoApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <!-- <div class="header">
+      <div class="navbar navbar-default nav-color-pike" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+             <img alt="Brand" src="under.jpg" width="30px" height="30px">
+            </a>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#!/">yo</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+            <ul class="nav navbar-nav">
+              <li ng-class="{'active-pike':selectedTab === 'home'}" ng-click="selectedTab = 'home'"><a href="#!/">Home</a></li>
+              <li ng-class="{'active-pike':selectedTab === 'movies'}" ng-click="selectedTab = 'movies'"><a ng-href="#!/movies">Students</a></li>
+              <li ng-class="{'active-pike':selectedTab === 'peoples'}" ng-click="selectedTab = 'peoples'"><a ng-href="#!/peopleT">Peoples</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="noSpace">
+      <center>
+      <img src="./localhost_files/1018Logo.png" width="850" height="200">
+      </center>
+    </div>
+    <center>
+      <nav class="navbar navbar-default noSpace" style="background-color: #FDFDFD; width: 900px;">
+          <div class="container" style="width: 900px;">
+          <a class="navbar-brand" href="http://localhost:9000/#">
+             <img alt="Brand" src="./localhost_files/under.jpg" width="30px" height="30px">
+            </a>
+
+            <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+              <ul class="nav navbar-nav">
+                <li ng-class="{&#39;active&#39;:selectedTab === &#39;home&#39;}" ng-click="selectedTab = &#39;home&#39;"><a href="http://localhost:9000/#!/">Home</a></li>
+                <li ng-class="{&#39;active&#39;:selectedTab === &#39;movies&#39;}" ng-click="selectedTab = &#39;movies&#39;"><a ng-href="#!/movies">Students</a></li>
+                <li ng-class="{&#39;active&#39;:selectedTab === &#39;peoples&#39;}" ng-click="selectedTab = &#39;peoples&#39;"><a ng-href="#!/peopleT">Peoples</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </center>
+
+    <div class="container" ng-style="{ &#39;width&#39; : width }">
+    <div ng-view="/"></div>
+    </div>
+
+    <div class="footer footer-color noSpace-top gray">
+      <div class="container-fluid">
+        <div><!-- <p><span class="glyphicon glyphicon-heart"></span>from da boys an gurls down at the robodevils</p> -->
+          <div class="foot-box">
+            <div class="image-box float-right">
+              <a href="https://twitter.com/robodevil1018">
+                <img src="./localhost_files/twitter-logo.png" height="50px" width="50px">
+              </a>
+            </div>
+            <div class="image-box float-right">
+              <a href="https://www.instagram.com/robodevil1018/?hl=en">
+                <img src="./localhost_files/insta-icon.png" height="50px" width="50px">
+              </a>
+            </div>
+            <div class="image-box float-right">
+              <a href="https://www.facebook.com/RoboDevils1018/">
+                <img src="./localhost_files/fb-icon.png" height="50px" width="50px">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script src="./localhost_files/analytics.js"></script><script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'CMONEY');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="./localhost_files/jquery.js"></script>
+    <script src="./localhost_files/angular.js"></script>
+    <script src="./localhost_files/bootstrap.js"></script>
+    <script src="./localhost_files/angular-route.js"></script>
+    <script src="./localhost_files/lodash.js"></script>
+    <script src="./localhost_files/restangular.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="./localhost_files/app.js"></script>
+        <script src="./localhost_files/main.js"></script>
+        <script src="./localhost_files/about.js"></script>
+        <script src="./localhost_files/movies.js"></script>
+        <script src="./localhost_files/movie-add.js"></script>
+        <script src="./localhost_files/movie-view.js"></script>
+        <script src="./localhost_files/movie-delete.js"></script>
+        <script src="./localhost_files/movie-edit.js"></script>
+        <script src="./localhost_files/peoplet.js"></script>
+        <script src="./localhost_files/image.js"></script>
+        <script src="./localhost_files/movie-person.js"></script>
+        <!-- endbuild -->
+<script src="./localhost_files/livereload.js" async="" defer=""></script>
+
+</body></html>

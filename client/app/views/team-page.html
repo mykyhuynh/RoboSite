@@ -1,0 +1,26 @@
+<div>
+
+<div class="jumbotron white" style="border-radius: 0px;">
+	<ul class="nav nav-tabs" ng-init="selectedTab = 'home'">
+	  <li role="presentation" ng-class="{'active':selectedTab === 'home'}" ng-click="selectedTab = 'home'"><a href="#!/team-page">Home</a></li>
+	  <li role="presentation" ng-class="{'active':selectedTab === 'movies'}" ng-click="selectedTab = 'movies'"><a href="#!/movies">Movies</a></li>
+	  <li role="presentation" ng-class="{'active':selectedTab === 'students'}" ng-click="selectedTab = 'students'"><a href="#">students</a></li>
+	  <li role="presentation" class="dropdown">
+	    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+	      Dropdown <span class="caret"></span>
+	    </a>
+	    <ul class="dropdown-menu">
+	      ...
+	    </ul>
+	  </li>
+	  ...
+	</ul>
+</div>
+
+<!-- 	 <div class="pike-container">
+	    <div class="container-fluid">
+	        <div ng-view="#!/team-page"></div>
+	    </div>
+	</div> -->
+
+</div>
