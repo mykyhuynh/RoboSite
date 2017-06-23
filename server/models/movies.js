@@ -7,7 +7,7 @@ var MovieSchema = new mongoose.Schema({
 		type: String,
 		required: true
 	},
-	url: {
+	fav: {
 		type: String,
 		required: false
 	},
@@ -19,15 +19,19 @@ var MovieSchema = new mongoose.Schema({
 		type: String,
 		required: false
 	},
-	mom: {
+	imaGe: {
 		type: String,
-		required: false
-	},
-	image: {
-		type: Schema.Types.ObjectId, 
-		ref: "fs.files",
-		required: [true, 'No image id found']
-	},
+		required: true
+	}
+	// mom: {
+	// 	type: String,
+	// 	required: false
+	// },
+	// image: {
+	// 	type: Schema.Types.ObjectId, 
+	// 	ref: "fs.files",
+	// 	required: [true, 'No image id found']
+	// },
 	// people: {
 	// 	sports: {
 	// 		type: String,
@@ -38,9 +42,9 @@ var MovieSchema = new mongoose.Schema({
 	// 	required: true
 	// 	}
 	// }
-	student: {
-		names: []
-	}
+	// student: {
+	// 	names: []
+	// }
 });
 
 //exportable

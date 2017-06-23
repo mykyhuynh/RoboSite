@@ -110,8 +110,6 @@ angular
     return PeopleRestangular.service('people');
   })
 
-  $scope.selectedTab = "home";
-
   // $scope.myStyle = {
   //   "width": "900px"
   // };

@@ -43,7 +43,12 @@
 
      vm.movieObject = Movie.getList().$object;
 
-
+     vm.mentors = [
+        {image: 'sliderImage2.png', description: 'Image 00'},
+        {image: 'slideImage1.jpg', description: 'Image 01'},
+        {image: 'sliderImage3.png', description: 'Image 02'},
+        {image: 'images/b2.jpg', description: 'Image 03'}
+    ];
 
   }
 })();

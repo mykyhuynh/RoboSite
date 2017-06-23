@@ -13,7 +13,7 @@
 	  </li>
 	  ...
 	</ul> -->
-<a class="btn btn-primary" href="/#!/create/movie"><span class="glyphicon glyphicon-plus"></span>Create student</a>
+<!-- <a class="btn btn-primary" href="/#!/create/movie"><span class="glyphicon glyphicon-plus"></span>Create student</a> -->
 <!-- <div class="jumbotron">
 	<table class="table table-striped">
 		<thead>
@@ -38,10 +38,24 @@
 	</table>
 </div> -->
   <div class="row">
-    <ul class="col-xs-6 col-md-6" ng-repeat="movie in movieObject">
-    	<li class="thumbnail"><a ng-href="/#!/movie/{{ movie._id }}">{{ movie.title }}</a></li>
+    <ul class="col-xs-6 col-md-6" ng-repeat="movie in movieObject" ng-repeat="mentor in mentors">
+    	<li class="thumbnail">
+    		<a ng-href="/#!/movie/{{ movie._id }}" class="noDeck moreSpace" style="padding-top: 20px;">	
+    			<img class="moreSpace" src="images/mentors/{{ movie.imaGe }}" height="257px" width="200px" />
+    		</a>
+    			<h3>{{ movie.title }}</h3>
+    	</li>
     </ul>
   </div>
+
+<!--   <div class="row">
+    <ul class="col-xs-12 col-md-12" ng-repeat="mentor in mentors">
+    	<li class="thumbnail">
+    		<img class="moreSpace" src="images/{{ mentor.image }}" height="10px" width="200px" />
+    		{{ mentor.description }}
+    	</li>
+    </ul>
+  </div> -->
 </div>
 <!-- <div class="row">
   <div class="col-xs-6 col-md-3">
