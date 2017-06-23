@@ -2,6 +2,14 @@ body {
 	    background-color: rgb(241, 54, 64);
 }
 
+/*=================TEXT================*/
+.noDeck {
+    text-decoration: none;
+}
+
+/*==============NAVBAR================*/
+
+
 .navbar-radius {
 	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 0px;
@@ -19,6 +27,8 @@ body {
 .no-radius {
 	border-radius: 0px;
 }
+
+/*===========spacings=========*/
 
 .moreSpace {
 	margin-top: 20px;
