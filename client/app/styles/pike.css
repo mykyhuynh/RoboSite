@@ -2,6 +2,10 @@ body {
 	    background-color: rgb(241, 54, 64);
 }
 
+a {
+    cursor: pointer;
+}
+
 /*=================TEXT================*/
 .noDeck {
     text-decoration: none;

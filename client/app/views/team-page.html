@@ -1,8 +1,8 @@
-<div>
+<!-- <div>
 
 <div class="jumbotron white" style="border-radius: 0px;">
 	<ul class="nav nav-tabs" ng-init="selectedTab = 'home'">
-	  <li role="presentation" ng-class="{'active':selectedTab === 'home'}" ng-click="selectedTab = 'home'"><a href="#!/team-page">Home</a></li>
+	  <li role="presentation" ng-class="{'active':selectedTab === 'home'}" ng-click="selectedTab = 'home'"><a href="#!/peopleT">Home</a></li>
 	  <li role="presentation" ng-class="{'active':selectedTab === 'movies'}" ng-click="selectedTab = 'movies'"><a href="#!/movies">Movies</a></li>
 	  <li role="presentation" ng-class="{'active':selectedTab === 'students'}" ng-click="selectedTab = 'students'"><a href="#">students</a></li>
 	  <li role="presentation" class="dropdown">
@@ -23,4 +23,38 @@
 	    </div>
 	</div> -->
 
+<div class="jumbotron white" style="border-radius: 0px;">
+	<div class="tabbable tabs-left">
+		<ul class="nav nav-tabs" ng-init="selectedTab = 'home'">
+			<li role="presentation" ng-class="{'active': selectedTab == 'home'}">
+				<a ng-click="selectedTab = 'home'">Home</a>
+			</li>
+		  	<li role="presentation" ng-class="{'active': selectedTab == 'Mentors'}">
+				<a ng-click="selectedTab = 'Mentors'">Mentors</a>
+			</li>
+			<li role="presentation" ng-class="{'active': selectedTab == 'sponsors'}">
+				<a ng-click="selectedTab = 'sponsors'">sponsors</a>
+			</li>
+		</ul>
+
+		<div class="tab-content">
+			<div ng-switch="selectedTab">
+				<div ng-switch-when="home">
+
+						<!-- take not that i had to essentially define the movies controller inside the team-page controller -->
+						<div ng-include="'views/team-page/home.html'"></div>
+					</div>
+				<div ng-switch-when="Mentors">
+
+						<!-- take not that i had to essentially define the movies controller inside the team-page controller -->
+						<div ng-include="'views/movies.html'"></div>
+					</div>
+			</div>
+		</div>
+	</div>
 </div>
+
+
+
+
+
