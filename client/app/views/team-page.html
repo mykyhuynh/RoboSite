@@ -35,6 +35,9 @@
 			<li role="presentation" ng-class="{'active': selectedTab == 'sponsors'}">
 				<a ng-click="selectedTab = 'sponsors'">sponsors</a>
 			</li>
+			<li role="presentation" ng-class="{'active': selectedTab == 'students'}">
+				<a ng-click="selectedTab = 'students'">Students</a>
+			</li>
 		</ul>
 
 		<div class="tab-content">
@@ -42,12 +45,22 @@
 				<div ng-switch-when="home">
 
 						<!-- take not that i had to essentially define the movies controller inside the team-page controller -->
-						<div ng-include="'views/team-page/home.html'"></div>
+						<div ng-include src="'views/team-page/home.html'"></div>
 					</div>
 				<div ng-switch-when="Mentors">
 
 						<!-- take not that i had to essentially define the movies controller inside the team-page controller -->
 						<div ng-include="'views/movies.html'"></div>
+					</div>
+				<div ng-switch-when="sponsors">
+
+						<!-- take not that i had to essentially define the movies controller inside the team-page controller -->
+						<div ng-include="'views/sponsors.html'"></div>
+					</div>
+				<div ng-switch-when="students">
+
+						<!-- take not that i had to essentially define the movies controller inside the team-page controller -->
+						<div ng-include="'views/peopleT.html'"></div>
 					</div>
 			</div>
 		</div>

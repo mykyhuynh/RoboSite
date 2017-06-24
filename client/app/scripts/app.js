@@ -78,6 +78,11 @@ angular
         controller: 'SponsorsCtrl',
         controllerAs: 'sponsors'
       })
+      .when('/people/:id', {
+        templateUrl: 'views/people-view.html',
+        controller: 'PeopleViewCtrl',
+        controllerAs: 'peopleView'
+      })
       .otherwise({
         redirectTo: '/'
       });

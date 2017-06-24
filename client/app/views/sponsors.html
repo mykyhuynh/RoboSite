@@ -1,10 +1,52 @@
-<div class="jumbotron white noSpace" style="border-radius: 0px;">
-	<h1>
+<div class="jumbotron white noSpace" style="
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+">
+	<h2 class="left noSpace-top">
 		Sponsors
-	</h1>
+	</h2>
 	<hr>
-	<h2>
+	<h2 class="left">
 		Gold
 	</h2>
-	<img src="balls.jpg" height="100px" width="100px" />
+	<div class="row">
+		<ul class="col-sm-3 col-md-6 col-lg-4" ng-repeat="gold in golds">
+			<li class="">
+				<img src="images/sponsors/gold/{{ gold.image }}" height="200px" width="200px" />
+			</li>
+		</ul>
+	</div>
+	<hr>
+	<h2 class="left">
+		2017 Sponsors
+	</h2>
+	<div class="row">
+		<ul class="col-sm-3 col-md-6 col-lg-4" ng-repeat="gold in Sponsors">
+			<li class="">
+				<img src="images/sponsors/{{ gold.image }}" height="200px" width="200px" />
+			</li>
+		</ul>
+	</div>
 </div>
+  <div class="row marketing noSpace-top gray margin-left last-radius">
+    <p class="right-image">
+      <img src="stem.png" width="180" height="150" alt="I'm Yeoman">
+    </p>
+    <div class="words-left">
+      <!-- <h4><strong>Mission Statement</strong></h4>
+      <p>
+        3 guarantess
+        - Death
+        - Taxes
+        - !018 will be world champs
+      </p> -->
+
+      <h4><strong>Wanna be a Sponsor?</strong></h4>
+      <p>
+        Team 868 owes all of its success and sustainability to its generous sponsors. The sponsors recognize that they are making a positive investment in the future and are donating to a team that is part of an outstanding organization. 
+We thank all of our sponsors for their engineers on our team. material resources, and/or monetary contributions. If you would like more information on becoming a sponsor, please feel free to e-mail us with any questions at techhoundssponsors@gmail.com.     
+      </p>
+    </div>
+  </div>
