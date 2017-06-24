@@ -1,8 +1,13 @@
-<h3>{{ movie.title }}</h3>
-<p>{{ movie.url }}</p>
-<h4>Team</h4>
-<p>{{ movie.team }}</p>
-<h4>Whyd you join</h4>
-<p>{{ movie.why }}</p>
-<h2>Kiddos</h2>
-<p ng-href="/#!/movie/person{{ movie._id }}">{{ movie.people[0] }}</p>
+<div class="jumbotron white" style="border-radius: 0px;">
+	<h3>{{ movie.title }}</h3>
+	<div style="float: left;">
+		<img src="images/mentors/{{ movie.imaGe }}" class="profileHolder">
+	</div>
+	<p>{{ movie.url }}</p>
+	<h4>Team</h4>
+	<p>{{ movie.team }}</p>
+	<h4>Whyd u join</h4>
+	<p>{{ movie.why }}</p>
+	<h2>Kiddos</h2>
+	<p ng-href="/#!/movie/person{{ movie._id }}">{{ movie.people[0] }}</p>
+</div>

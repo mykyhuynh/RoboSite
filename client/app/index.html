@@ -16,6 +16,7 @@
     <!-- endbuild -->
   </head>
   <body ng-app="yoApp">
+  <div class="body">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -67,7 +68,7 @@
               <ul class="nav navbar-nav" ng-init="selectedTab = 'home'">
                 <li ng-class="{'active':selectedTab === 'home'}" ng-click="selectedTab = 'home'"><a href="#!/">Home</a></li>
                 <li ng-class="{'active':selectedTab === 'movies'}" ng-click="selectedTab = 'movies'"><a ng-href="#!/team-page">1018</a></li>
-                <li ng-class="{'active':selectedTab === 'peoples'}" ng-click="selectedTab = 'peoples'"><a ng-href="#!/movies">Peoples</a></li>
+                <li ng-class="{'active':selectedTab === 'peoples'}" ng-click="selectedTab = 'peoples'"><a ng-href="#!/peopleT">Peoples</a></li>
                 <li ng-class="{'active':selectedTab === 'sponsors'}" ng-click="selectedTab = 'sponsors'"><a ng-href="#!/sponsors">Sponsors</a></li>
               </ul>
             </div>
@@ -107,7 +108,7 @@
         </div>
       </div>
     </div>
-
+</div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
