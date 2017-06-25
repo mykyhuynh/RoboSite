@@ -41,6 +41,7 @@
 
     //mentor stuff
 	vm.movieObject = Movie.getList().$object;
+	console.log(vm.movieObject);
 
 	//student stuff
 	vm.peopleObject = People.getList().$object;

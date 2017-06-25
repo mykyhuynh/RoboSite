@@ -39,12 +39,7 @@
     ]
 
     vm.Sponsors = [
-        {image: 'bc.jpeg', description: 'Image 00'},
-        {image: 'ci.jpeg', description: 'Image 01'},
-        {image: 'if.png', description: 'Image 04'},
-        {image: 'rr.png', description: 'Image 02'},
-        {image: 'wj.png', description: 'Image 03'},
-        {image: 'ycc.jpeg', description: 'Image 05'}
+        {image: 'pp.jpg', description: 'Image 00'}
     ]
 
     

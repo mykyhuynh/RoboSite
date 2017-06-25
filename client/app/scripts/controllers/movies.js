@@ -43,6 +43,8 @@
 
      vm.movieObject = Movie.getList().$object;
 
+     console.log(movieObject);
+
      vm.mentors = [
         {image: 'sliderImage2.png', description: 'Image 00'},
         {image: 'slideImage1.jpg', description: 'Image 01'},
