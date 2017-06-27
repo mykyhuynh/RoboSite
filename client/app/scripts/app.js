@@ -93,6 +93,26 @@ angular
         controller: 'ResourcesCtrl',
         controllerAs: 'resources'
       })
+      .when('/first', {
+        templateUrl: 'views/first.html',
+        controller: 'FirstCtrl',
+        controllerAs: 'first'
+      })
+      .when('/robot', {
+        templateUrl: 'views/robot.html',
+        controller: 'RobotCtrl',
+        controllerAs: 'robot'
+      })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl',
+        controllerAs: 'contact'
+      })
+      .when('/reach', {
+        templateUrl: 'views/reach.html',
+        controller: 'ReachCtrl',
+        controllerAs: 'reach'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -60,18 +60,22 @@
     <div class="container-fluid">
       <nav class="navbar navbar-default noSpace navbar-radius" style="background-color: #FDFDFD; width: 900px;">
           <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-             <img alt="Brand" src="under.jpg" width="30px" height="30px">
-            </a>
+          <div class="navbar-brand">
+             <img alt="Brand" src="stanBrand.jpg" width="30px" height="30px">
+            </div>
 
             <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
               <ul class="nav navbar-nav" ng-init="selectedTab = 'home'">
                 <li ng-class="{'active':selectedTab === 'home'}" ng-click="selectedTab = 'home'"><a href="#!/">Home</a></li>
-                <li ng-class="{'active':selectedTab === 'movies'}" ng-click="selectedTab = 'movies'"><a ng-href="#!/team-page">1018</a></li>
+                <li ng-class="{'active':selectedTab === 'movies'}" ng-click="selectedTab = 'movies'"><a ng-href="#!/team-page">Team 1018</a></li>
                 <li ng-class="{'active':selectedTab === 'sponsors'}" ng-click="selectedTab = 'sponsors'"><a ng-href="#!/sponsors">Sponsors</a></li>
                 <li ng-class="{'active':selectedTab === 'media'}" ng-click="selectedTab = 'media'"><a ng-href="#!/media">Media</a></li>
                 <li ng-class="{'active':selectedTab === 'resources'}" ng-click="selectedTab = 'resources'"><a ng-href="#!/resources">Resources</a></li>
+                <li ng-class="{'active':selectedTab === 'first'}" ng-click="selectedTab = 'first'"><a ng-href="#!/first">FIRST</a></li>
+                <li ng-class="{'active':selectedTab === 'bot'}" ng-click="selectedTab = 'bot'"><a ng-href="#!/robot">2017 Robot</a></li>
+                <li ng-class="{'active':selectedTab === 'reach'}" ng-click="selectedTab = 'reach'"><a ng-href="#!/reach">Outreach</a></li>
+                <li ng-class="{'active':selectedTab === 'contact'}" ng-click="selectedTab = 'contact'"><a ng-href="#!/contact">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -84,6 +88,10 @@
             <div ng-view="#!/"></div>
           </div>
         </div>
+
+      <div class="scroll-icon">
+        <img src="black-panther.png" height="200px" width="250px">
+      </div>
 
     <div class="footer footer-color noSpace-top gray">
       <div class="container-fluid">
@@ -133,8 +141,6 @@
     <script src="bower_components/lodash/lodash.js"></script>
     <script src="bower_components/restangular/dist/restangular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="https://www.youtube.com/iframe_api"></script>
-<script src="angular-youtube-embed.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -155,6 +161,10 @@
         <script src="scripts/controllers/people-view.js"></script>
         <script src="scripts/controllers/media.js"></script>
         <script src="scripts/controllers/resources.js"></script>
+        <script src="scripts/controllers/first.js"></script>
+        <script src="scripts/controllers/robot.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
+        <script src="scripts/controllers/reach.js"></script>
         <!-- endbuild -->
 
       <!-- ============slider scripts ========= -->
