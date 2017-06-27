@@ -37,10 +37,12 @@
 		</tbody>
 	</table>
 </div> -->
+
+	<!-- image size 210x240 -->
   <div class="row">
-    <ul class="col-xs-6 col-md-6" ng-repeat="movie in movieObject" ng-repeat="mentor in mentors">
+    <ul class="col-xs-6 col-md-6" ng-repeat="movie in movieObject">
     	<li class="thumbnail">
-    		<a ng-href="/#!/movie/{{ movie._id }}" class="noDeck moreSpace" style="padding-top: 20px;">	
+    		<a ng-href="/#!/movie/{{ movie._id }}" class="noDeck moreSpace" ng-click="selectedTab = '{{ movie._id }}'" style="padding-top: 20px;">	
     			<img class="moreSpace" src="images/mentors/{{ movie.imaGe }}" height="257px" width="200px" />
     		</a>
     			<h3>{{ movie.title }}</h3>

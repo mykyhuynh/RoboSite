@@ -1,4 +1,4 @@
-<table class="table table-striped">
+<!-- <table class="table table-striped">
 		<thead>
 			<th>Name</th>
 		</thead>
@@ -7,4 +7,17 @@
 				<td>{{ people.name }}</td>
 			</tr>
 		</tbody>
-</table>
+</table> -->
+
+<div class="jumbotron white" style="border-radius: 0px;">
+  <div class="row">
+    <ul class="col-xs-6 col-md-6" ng-repeat="people in peopleObject">
+    	<li class="thumbnail">
+    		<a ng-href="/#!/people/{{ people._id }}" class="noDeck moreSpace" style="padding-top: 20px;">	
+    			<img class="moreSpace" src="images/students/{{ people.imaGe }}" height="257px" width="200px" />
+    		</a>
+    			<h3>{{ people.name }}</h3>
+    	</li>
+    </ul>
+  </div>
+</div>

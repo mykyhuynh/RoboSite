@@ -9,16 +9,17 @@
   </div>
 
   <div class="container-fluid slider noSpace">
-    <img ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage blur"
+    <img ng-repeat="slide in slides" class="slide rotate nonDraggableImage blur"
          ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
 
         <!-- <a class="arrow prev" href="#!/" ng-click="callNext()"></a>
         <a class="arrow next" href="#!/" ng-click="nextSlide()"></a> -->
 
+        <!-- image size is 900x300 -->
     <nav class="slide-nav">
       <div class="slide-wrapper">
         <ul class="dots">
-          <li class="dot" ng-repeat="slide in slides">
+          <li class="dot" ng-repeat="slide in slides" ui-jq="fadeIn">
               <a href="#!/" ng-class="{'active':isCurrentSlideIndex($index)}"
               ng-click="setCurrentSlideIndex($index);"></a>
           </li>
@@ -29,6 +30,26 @@
   </div>
 
   <div class="row marketing noSpace noSpace-top white margin-left">
+    <p class="right-image">
+      <img src="pikeLogo.jpg" width="250" height="150" alt="I'm Yeoman">
+    </p>
+    <div class="words-left">
+      <!-- <h4><strong>Mission Statement</strong></h4>
+      <p>
+        3 guarantess
+        - Death
+        - Taxes
+        - !018 will be world champs
+      </p> -->
+
+      <h4><strong>Pike High School</strong></h4>
+      <p>
+        Life is a journey… it is not the destination that counts so much as who you have along for the ride. We each have a story, stories of people who were, are and will be a part of our life’s journey. Schools are full of examples of the importance of relationships. Staff, students, parents, volunteers, and community members who make a difference. It’s the doors we open for our students that make a difference. In Pike Township, we make a difference in the lives of our scholars.     
+      </p>
+    </div>
+  </div>
+
+  <div class="row marketing noSpace noSpace-top gray margin-left">
     <p class="left-image">
       <img src="frc.png" width="180" height="150" alt="I'm Yeoman">
     </p>
@@ -48,7 +69,7 @@
     </div>
   </div>
 
-    <div class="row marketing noSpace-top gray margin-left last-radius">
+  <div class="row marketing noSpace-top white margin-left last-radius">
     <p class="right-image">
       <img src="stem.png" width="180" height="150" alt="I'm Yeoman">
     </p>

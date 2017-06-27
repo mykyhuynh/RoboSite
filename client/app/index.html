@@ -16,6 +16,7 @@
     <!-- endbuild -->
   </head>
   <body ng-app="yoApp">
+  <div class="body">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -50,12 +51,13 @@
         </div>
       </div>
     </div> -->
-    <div class="noSpace moreSpace">
-      <center>
-      <img src="logo.png" width="850" height="200">
-      </center>
+    <div class="noSpace moreSpace pike-container">
+      <div class="container-fluid">
+        <img src="logo.png" width="850" height="200">
+      </div>
     </div>
-    <center>
+    <div class="pike-container">
+    <div class="container-fluid">
       <nav class="navbar navbar-default noSpace navbar-radius" style="background-color: #FDFDFD; width: 900px;">
           <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -67,13 +69,15 @@
               <ul class="nav navbar-nav" ng-init="selectedTab = 'home'">
                 <li ng-class="{'active':selectedTab === 'home'}" ng-click="selectedTab = 'home'"><a href="#!/">Home</a></li>
                 <li ng-class="{'active':selectedTab === 'movies'}" ng-click="selectedTab = 'movies'"><a ng-href="#!/team-page">1018</a></li>
-                <li ng-class="{'active':selectedTab === 'peoples'}" ng-click="selectedTab = 'peoples'"><a ng-href="#!/peopleT">Peoples</a></li>
                 <li ng-class="{'active':selectedTab === 'sponsors'}" ng-click="selectedTab = 'sponsors'"><a ng-href="#!/sponsors">Sponsors</a></li>
+                <li ng-class="{'active':selectedTab === 'media'}" ng-click="selectedTab = 'media'"><a ng-href="#!/media">Media</a></li>
+                <li ng-class="{'active':selectedTab === 'resources'}" ng-click="selectedTab = 'resources'"><a ng-href="#!/resources">Resources</a></li>
               </ul>
             </div>
           </div>
         </nav>
-      </center>
+      </div>
+      </div>
 
         <div class="pike-container">
           <div class="container-fluid">
@@ -107,7 +111,7 @@
         </div>
       </div>
     </div>
-
+</div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -129,6 +133,8 @@
     <script src="bower_components/lodash/lodash.js"></script>
     <script src="bower_components/restangular/dist/restangular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+<script src="angular-youtube-embed.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -146,6 +152,9 @@
         <script src="scripts/controllers/movie-person.js"></script>
         <script src="scripts/controllers/team-page.js"></script>
         <script src="scripts/controllers/sponsors.js"></script>
+        <script src="scripts/controllers/people-view.js"></script>
+        <script src="scripts/controllers/media.js"></script>
+        <script src="scripts/controllers/resources.js"></script>
         <!-- endbuild -->
 
       <!-- ============slider scripts ========= -->

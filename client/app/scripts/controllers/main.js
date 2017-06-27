@@ -113,6 +113,7 @@
     vm.slides = [
     	{image: 'sliderImage2.png', description: 'Image 00'},
    	    {image: 'slideImage1.jpg', description: 'Image 01'},
+        {image: 'space jam.jpg', description: 'Image 04'},
         {image: 'sliderImage3.png', description: 'Image 02'},
         {image: 'kobeeee.jpg', description: 'Image 03'}
     ];
@@ -153,7 +154,7 @@
 
     function nextSlide() {
     	console.log(vm.currentIndex);
-    	$interval(callNext, 3000);
+    	$interval(callNext, 8000);
     }
 
     //===========animations========
@@ -173,7 +174,7 @@
 //calls this stuff when page loads
     vm.$on('$viewContentLoaded', function() {
         console.log(vm.currentIndex);
-        $interval(callNext, 3000);
+        $interval(callNext, 8000);
     })
 
 
