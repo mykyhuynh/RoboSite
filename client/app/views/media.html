@@ -1,1 +1,27 @@
-<p>This is the media view.</p>
+<div class="jumbotron white" style="border-radius: 0px;">
+	<div class="tabbable tabs-left">
+		<ul class="nav nav-tabs" ng-init="selectedTab = 'Photos'">
+			<li role="presentation" ng-class="{'active': selectedTab == 'Photos'}">
+				<a ng-click="selectedTab = 'Photos'">Photos</a>
+			</li>
+		  	<li role="presentation" ng-class="{'active': selectedTab == 'videos'}">
+				<a ng-click="selectedTab = 'videos'">Videos</a>
+			</li>
+		</ul>
+
+		<div class="tab-content">
+			<div ng-switch="selectedTab">
+				<div ng-switch-when="Photos">
+
+						<!-- take not that i had to essentially define the movies controller inside the team-page controller -->
+						<div ng-include src="'views/media/photos.html'"></div>
+					</div>
+				<div ng-switch-when="videos">
+
+						<!-- take not that i had to essentially define the movies controller inside the team-page controller -->
+						<div ng-include="'views/media/videos.html'"></div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
