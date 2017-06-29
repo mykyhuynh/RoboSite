@@ -40,71 +40,71 @@ mongoose.connection.once('open', function() {
 	app.models = require('./models/index');
 
 	//get image
-	app.get('/image/:_id', function(req, res){ 
-        gfs = Grid(conn.db);
-        var readstream = gfs.createReadStream({_id: req.params._id}); 
-        readstream.on("error", function(err){
-            res.send("No image found with that title"); 
-        });
-        let final = res;
-        let object = [
-        	final
-        ];
-        readstream.pipe(final);
-    });
+	// app.get('/image/:_id', function(req, res){ 
+ //        gfs = Grid(conn.db);
+ //        var readstream = gfs.createReadStream({_id: req.params._id}); 
+ //        readstream.on("error", function(err){
+ //            res.send("No image found with that title"); 
+ //        });
+ //        let final = res;
+ //        let object = [
+ //        	final
+ //        ];
+ //        readstream.pipe(final);
+ //    });
 
-     app.post('/img', (req, res) => {
-     	let gfs = Grid(conn.db);
-        let part = req.files.file;
-        let writeStream = gfs.createWriteStream({
-            filename: 'img_' + part.name,
-            mode: 'w',
-            content_type: part.mimetype
-        });
+ //     app.post('/img', (req, res) => {
+ //     	let gfs = Grid(conn.db);
+ //        let part = req.files.file;
+ //        let writeStream = gfs.createWriteStream({
+ //            filename: 'img_' + part.name,
+ //            mode: 'w',
+ //            content_type: part.mimetype
+ //        });
 
-        writeStream.on('close', (file) => {
-            return res.status(200).send({
-                message: 'Success',
-                file: file
-            });
-        });
-        writeStream.write(part.data);
-        writeStream.end();
-    });
+ //        writeStream.on('close', (file) => {
+ //            return res.status(200).send({
+ //                message: 'Success',
+ //                file: file
+ //            });
+ //        });
+ //        writeStream.write(part.data);
+ //        writeStream.end();
+ //    });
 
-       app.get('/img/:imgname', (req, res) => {
-       	let gfs = Grid(conn.db);
-        gfs.files.find({
-            filename: req.params.imgname
-        }).toArray((err, files) => {
+ //       app.get('/img/:imgname', (req, res) => {
+ //       	let gfs = Grid(conn.db);
+ //        gfs.files.find({
+ //            filename: req.params.imgname
+ //        }).toArray((err, files) => {
 
-            if (files.length === 0) {
-                return res.status(400).send({
-                    message: 'File not found'
-                });
-            }
-            let data = [];
-            let readstream = gfs.createReadStream({
-                filename: files[0].filename
-            });
+ //            if (files.length === 0) {
+ //                return res.status(400).send({
+ //                    message: 'File not found'
+ //                });
+ //            }
+ //            let data = [];
+ //            let readstream = gfs.createReadStream({
+ //                filename: files[0].filename
+ //            });
 
-            readstream.on('data', (chunk) => {
-                data.push(chunk);
-            });
+ //            readstream.on('data', (chunk) => {
+ //                data.push(chunk);
+ //            });
 
-            readstream.on('end', () => {
-                data = Buffer.concat(data);
-                let img = 'data:image/png;base64,' + Buffer(data).toString('base64');
-                fs.writeFileSync("example.jpg", img);
-                res.end(img);
-            });
+ //            readstream.on('end', () => {
+ //                data = Buffer.concat(data);
+ //                let img = 'data:image/png;base64,' + Buffer(data).toString('base64');
+ //                fs.writeFileSync("example.jpg", img);
+ //                res.end(img);
+ //            });
 
-            readstream.on('error', (err) => {
-                console.log('An error occurred!', err);
-                throw err;
-            });
-        });
-    });
+ //            readstream.on('error', (err) => {
+ //                console.log('An error occurred!', err);
+ //                throw err;
+ //            });
+ //        });
+ //    });
 
 	//Load routes
 	var routes = require('./routes');

@@ -3,11 +3,36 @@
         top: 0px;
         left: 0px;
         width: 100vw;
-	    background-color: rgb(241, 54, 64);
+	    background-color: #C52033;
         margin-top: 0px;
         padding-top: 0px;
         z-index: -2;
 }
+
+@font-face { 
+    font-family: 'bank';
+    src: url('../bank-gothic.ttf'); 
+    src: 
+        local('bank'),
+        local('bank'),
+        url('../bank-gothic.ttf') 
+        format('opentype');
+}
+
+.bank-nav {
+    font-family: "bank", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    transform: scale(1.2, 1.8);
+  -webkit-transform: scale(1.2, 1.8); /* Safari and Chrome */
+  -moz-transform: scale(1, 2); /* Firefox */
+  -ms-transform: scale(1, 2); /* IE 9+ */
+  -o-transform: scale(1, 2); /* Opera */
+  margin-bottom: 0px;
+}
+
 
 .scroll-icon {
     position: fixed;
