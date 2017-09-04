@@ -3,7 +3,7 @@
         top: 0px;
         left: 0px;
         width: 100vw;
-	    background-color: rgb(241, 54, 64);
+	    background-color: #C61436;
         margin-top: 0px;
         padding-top: 0px;
         z-index: -2;
@@ -44,6 +44,24 @@ a {
 /*=================TEXT================*/
 .noDeck {
     text-decoration: none;
+}
+
+@font-face {
+    font-family: "bank";
+    src: url('fonts/bankgothic-regular.ttf') format('truetype');
+
+}
+
+.bank {
+
+    font-family: "bank";
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: black;
+
+
 }
 
 /*==============NAVBAR================*/
@@ -139,7 +157,13 @@ a {
 
 .pike-container {
 	width: 960px;
-	margin-left: 12.5%;
+
+    /*===
+
+        This margin thing is awesome it centers the website for you
+
+    */
+	margin: 0 auto;
 	padding-left: 15px;
   	padding-right: 15px;
     z-index: 1;
