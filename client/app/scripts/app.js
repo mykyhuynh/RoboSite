@@ -123,6 +123,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/Photo', {
+        templateUrl: 'views/media/photo.html',
+        controller: 'PhotoCtrl',
+        controllerAs: 'Photo'
+      })
       .otherwise({
         redirectTo: '/'
       });
@@ -153,6 +158,19 @@ angular
   })
   .factory('People', function(PeopleRestangular) {
     return PeopleRestangular.service('people');
+  })
+
+
+  //Photo setup
+    .factory('PhotoRestangular', function(Restangular) {
+    return Restangular.withConfig(function(RestangularConfigurer) {
+      RestangularConfigurer.setRestangularFields ({
+        id: '_id'
+      });
+    });
+  })
+  .factory('PhoTo', function(PhotoRestangular) {
+    return PhotoRestangular.service('photo');
   })
 
   // $scope.myStyle = {

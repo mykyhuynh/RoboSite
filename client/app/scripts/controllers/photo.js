@@ -2,13 +2,13 @@
 
 // /**
 //  * @ngdoc function
-//  * @name yoApp.controller:MediaCtrl
+//  * @name yoApp.controller:PhotoCtrl
 //  * @description
-//  * # MediaCtrl
+//  * # PhotoCtrl
 //  * Controller of the yoApp
 //  */
 // angular.module('yoApp')
-//   .controller('MediaCtrl', function () {
+//   .controller('PhotoCtrl', function () {
 //     this.awesomeThings = [
 //       'HTML5 Boilerplate',
 //       'AngularJS',
@@ -16,22 +16,23 @@
 //     ];
 //   });
 
+
 (function() {
   'use strict';
   angular
     .module('yoApp')
-    .controller('MediaCtrl', MediaCtrl);
+    .controller('PhotoCtrl', PhotoCtrl);
 
     //all the stuff you want
-  MediaCtrl.$inject = ['$scope', 'PhoTo', '$location'];
+  PhotoCtrl.$inject = ['$scope', 'Photo', '$location'];
 
-  function MediaCtrl($scope, PhoTo, $location){
+  function PhotoCtrl($scope, Photo, $location){
   //example
     var vm = $scope;
 
-    vm.images = PhoTo.getList().$object;
+    vm.images = Photo.getList().$object;
 
-    console.log(vm.images);
+    console.log(images);
 
   }
 })();
