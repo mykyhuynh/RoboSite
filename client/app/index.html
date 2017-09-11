@@ -53,7 +53,7 @@
     </div> -->
     <div class="noSpace moreSpace pike-container">
       <div class="container-fluid">
-        <img src="1018Supreme.png" width="850" height="200">
+        <img src="images/layout/1018Supreme.png" width="850" height="200">
       </div>
     </div>
     <div class="pike-container">
@@ -61,7 +61,7 @@
       <nav class="navbar navbar-default noSpace navbar-radius" style="background-color: #FDFDFD; width: 900px;">
           <div class="container-fluid">
           <div class="navbar-brand">
-             <img alt="Brand" src="stanBrand.jpg" width="30px" height="30px">
+             <img alt="Brand" src="images/layout/stanBrand.jpg" width="30px" height="30px">
             </div>
 
             <div class="collapse navbar-collapse" id="js-navbar-collapse">
@@ -73,9 +73,60 @@
                 <li ng-class="{'active':selectedTab === 'media'}" ng-click="selectedTab = 'media'"><a ng-href="#!/media"><span class="bank">Media</span></a></li>
                 <li ng-class="{'active':selectedTab === 'resources'}" ng-click="selectedTab = 'resources'"><a ng-href="#!/resources"><span class="bank">Resources</span></a></li>
                 <li ng-class="{'active':selectedTab === 'first'}" ng-click="selectedTab = 'first'"><a ng-href="#!/first"><span class="bank">FIRST</span></a></li>
-                <!-- <li ng-class="{'active':selectedTab === 'bot'}" ng-click="selectedTab = 'bot'"><a ng-href="#!/robot"><span class="bank">Robot</span></a></li> -->
+                <!-- <li ng-class="{'active':selectedTab === 'bot'}" ng-click="selectedTab = 'bot'"><a ng-href="#!/">
+                  <div class="">
+                    <button class="bank" style="border: none;" type="button" id="dropdownMenuButton" data-toggle="dropdown" href="#!/" aria-haspopup="true" aria-expanded="false">
+                      Seasons
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div></a>
+                </li> -->
+
+                <li ng-class="{'active':selectedTab === 'seasons'}" ng-click="selectedTab = 'seasons'">
+                  <a type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="bank season-nav a-atts">Seasons
+                    <span class="glyphicon glyphicon-triangle-bottom"></span> 
+                    </span>
+                  </a>
+                  <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item bank" href="#">Action</a>
+                    <br>
+                    <a class="dropdown-item bank" href="#">Another action</a>
+                    <a class="dropdown-item bank" href="#">Something else here</a>
+                  </div> -->
+                  <ul class="dropdown-menu bank" aria-labelledby="dropdownMenuButton">
+                    <li><a ng-href="#!/seasons">2016-2017</a></li>
+                    <li><a href="#!/">2017-2018</a></li>
+                    <!-- <li><a href="#!/"></a></li> -->
+                  </ul>
+                </li>
+               <!--  <li ng-class="{'active':selectedTab === 'seasons'}" ng-click="selectedTab = 'seasons'">
+                   <a href="#!/" class="bank season-nav" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                       <li><a href="#">Action</a></li>
+                       <li><a href="#">Another action</a></li>
+                       <li><a href="#">Something else here</a></li>
+                       <li class="divider"></li>
+                       <li><a href="#">Separated link</a></li>
+                       <li class="divider"></li>
+                       <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li> -->
+<!--                 <li ng-class="{'active':selectedTab === 'seasons'}" ng-click="selectedTab = 'seasons'">
+                  <button class="bank a-atts season-nav" type="button" data-toggle="dropdown">Seasons
+                  <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                  </ul>
+                </li> -->
                 <li ng-class="{'active':selectedTab === 'reach'}" ng-click="selectedTab = 'reach'"><a ng-href="#!/reach"><span class="bank">Outreach</span></a></li>
-                <li ng-class="{'active':selectedTab === 'contact'}" ng-click="selectedTab = 'contact'"><a ng-href="#!/contact"><span class="bank">Contact Us</span></a></li>
+                <!-- <li ng-class="{'active':selectedTab === 'contact'}" ng-click="selectedTab = 'contact'"><a ng-href="#!/contact"><span class="bank">Contact Us</span></a></li> -->
               </ul>
             </div>
           </div>
@@ -99,17 +150,17 @@
           <div class="foot-box">
             <div class="image-box float-right">
               <a href="https://twitter.com/robodevil1018">
-                <img src="twitter-logo.png" height="50px" width="50px">
+                <img src="images/SM/twitter-logo.png" height="50px" width="50px">
               </a>
             </div>
             <div class="image-box float-right">
               <a href="https://www.instagram.com/robodevil1018/?hl=en">
-                <img src="insta-icon.png" height="50px" width="50px">
+                <img src="images/SM/insta-icon.png" height="50px" width="50px">
               </a>
             </div>
             <div class="image-box float-right">
               <a href="https://www.facebook.com/RoboDevils1018/">
-                <img src="fb-icon.png" height="50px" width="50px">
+                <img src="images/SM/fb-icon.png" height="50px" width="50px">
               </a>
             </div>
           </div>
@@ -166,6 +217,7 @@
         <script src="scripts/controllers/contact.js"></script>
         <script src="scripts/controllers/reach.js"></script>
         <script src="scripts/controllers/photo.js"></script>
+        <script src="scripts/controllers/seasons.js"></script>
         <!-- endbuild -->
 
       <!-- ============slider scripts ========= -->

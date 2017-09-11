@@ -1,28 +1,3 @@
-<!-- <div>
-
-<div class="jumbotron white" style="border-radius: 0px;">
-	<ul class="nav nav-tabs" ng-init="selectedTab = 'home'">
-	  <li role="presentation" ng-class="{'active':selectedTab === 'home'}" ng-click="selectedTab = 'home'"><a href="#!/peopleT">Home</a></li>
-	  <li role="presentation" ng-class="{'active':selectedTab === 'movies'}" ng-click="selectedTab = 'movies'"><a href="#!/movies">Movies</a></li>
-	  <li role="presentation" ng-class="{'active':selectedTab === 'students'}" ng-click="selectedTab = 'students'"><a href="#">students</a></li>
-	  <li role="presentation" class="dropdown">
-	    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-	      Dropdown <span class="caret"></span>
-	    </a>
-	    <ul class="dropdown-menu">
-	      ...
-	    </ul>
-	  </li>
-	  ...
-	</ul>
-</div>
-
-<!-- 	 <div class="pike-container">
-	    <div class="container-fluid">
-	        <div ng-view="#!/team-page"></div>
-	    </div>
-	</div> -->
-
 <div class="jumbotron white" style="border-radius: 0px;">
 	<div class="tabbable tabs-left">
 		<ul class="nav nav-tabs" ng-init="selectedTab = 'home'">
@@ -35,9 +10,6 @@
 			<li role="presentation" ng-class="{'active': selectedTab == 'students'}">
 				<a ng-click="selectedTab = 'students'">Students</a>
 			</li>
-			<li role="presentation" ng-class="{'active': selectedTab == 'students'}">
-				<a ng-click="selectedTab = 'students'">News</a>
-			</li>			
 		</ul>
 
 		<div class="tab-content">
@@ -45,7 +17,7 @@
 				<div ng-switch-when="home">
 
 						<!-- take not that i had to essentially define the movies controller inside the team-page controller -->
-						<div ng-include src="'views/team-page/home.html'"></div>
+						<div ng-include src="'views/seasons/home.html'"></div>
 					</div>
 				<div ng-switch-when="Mentors">
 
@@ -57,13 +29,7 @@
 						<!-- take not that i had to essentially define the movies controller inside the team-page controller -->
 						<div ng-include="'views/peopleT.html'"></div>
 					</div>
-
 			</div>
 		</div>
 	</div>
 </div>
-
-
-
-
-

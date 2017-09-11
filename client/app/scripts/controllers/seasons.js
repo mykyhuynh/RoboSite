@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name yoApp.controller:AboutCtrl
+ * @name yoApp.controller:SeasonsCtrl
  * @description
- * # AboutCtrl
+ * # SeasonsCtrl
  * Controller of the yoApp
  */
 angular.module('yoApp')
-  .controller('AboutCtrl', function () {
+  .controller('SeasonsCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
