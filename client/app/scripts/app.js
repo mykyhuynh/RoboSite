@@ -33,40 +33,15 @@ angular
         controller: 'MoviesCtrl',
         controllerAs: 'movies'
       })
-      .when('/create/movie', {
-        templateUrl: 'views/movie-add.html',
-        controller: 'MovieAddCtrl',
-        controllerAs: 'movieAdd'
-      })
       .when('/movie/:id', {
         templateUrl: 'views/movie-view.html',
         controller: 'MovieViewCtrl',
         controllerAs: 'movieView'
       })
-      .when('/movie/:id/delete', {
-        templateUrl: 'views/movie-delete.html',
-        controller: 'MovieDeleteCtrl',
-        controllerAs: 'movieDelete'
-      })
-      .when('/movie/:id/edit', {
-        templateUrl: 'views/movie-edit.html',
-        controller: 'MovieEditCtrl',
-        controllerAs: 'movieEdit'
-      })
       .when('/peopleT', {
         templateUrl: 'views/peoplet.html',
         controller: 'PeopletCtrl',
         controllerAs: 'peopleT'
-      })
-      .when('/image', {
-        templateUrl: 'views/image.html',
-        controller: 'ImageCtrl',
-        controllerAs: 'image'
-      })
-      .when('/movie/person/:id', {
-        templateUrl: 'views/movie-person.html',
-        controller: 'MoviePersonCtrl',
-        controllerAs: 'moviePerson'
       })
       .when('/team-page', {
         templateUrl: 'views/team-page.html',
@@ -118,15 +93,15 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
-      })
       .when('/Photo', {
         templateUrl: 'views/media/photo.html',
         controller: 'PhotoCtrl',
         controllerAs: 'Photo'
+      })
+      .when('/seasons', {
+        templateUrl: 'views/seasons.html',
+        controller: 'SeasonsCtrl',
+        controllerAs: 'seasons'
       })
       .otherwise({
         redirectTo: '/'
