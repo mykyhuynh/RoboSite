@@ -35,9 +35,18 @@
 			<li role="presentation" ng-class="{'active': selectedTab == 'students'}">
 				<a ng-click="selectedTab = 'students'">Students</a>
 			</li>
-			<li role="presentation" ng-class="{'active': selectedTab == 'students'}">
-				<a ng-click="selectedTab = 'students'">News</a>
-			</li>			
+			<li role="presentation" ng-class="{'active': selectedTab == 'news'}">
+				<a ng-click="selectedTab = 'news'">News</a>
+			</li>
+			<li role="presentation" ng-class="{'active': selectedTab == 'alum'}">
+				<a ng-click="selectedTab = 'alum'">Alumni</a>
+			</li>		
+			<li role="presentation" ng-class="{'active': selectedTab == 'events'}">
+				<a ng-click="selectedTab = 'events'">Events</a>
+			</li>		
+			<li role="presentation" ng-class="{'active': selectedTab == 'first'}">
+				<a ng-click="selectedTab = 'first'">FIRST</a>
+			</li>	
 		</ul>
 
 		<div class="tab-content">
@@ -50,14 +59,33 @@
 				<div ng-switch-when="Mentors">
 
 						<!-- take not that i had to essentially define the movies controller inside the team-page controller -->
-						<div ng-include="'views/movies.html'"></div>
+						<div ng-include="'views/team-page/movies.html'"></div>
 					</div>
 				<div ng-switch-when="students">
 
 						<!-- take not that i had to essentially define the movies controller inside the team-page controller -->
-						<div ng-include="'views/peopleT.html'"></div>
+						<div ng-include="'views/team-page/peopleT.html'"></div>
 					</div>
+				<div ng-switch-when="news">
 
+						<!-- take not that i had to essentially define the movies controller inside the team-page controller -->
+						<div ng-include="'views/team-page/news.html'"></div>
+					</div>
+				<div ng-switch-when="alum">
+
+						<!-- take not that i had to essentially define the movies controller inside the team-page controller -->
+						<div ng-include="'views/team-page/alum.html'"></div>
+					</div>
+				<div ng-switch-when="events">
+
+						<!-- take not that i had to essentially define the movies controller inside the team-page controller -->
+						<div ng-include="'views/team-page/events.html'"></div>
+					</div>
+				<div ng-switch-when="first">
+
+						<!-- take not that i had to essentially define the movies controller inside the team-page controller -->
+						<div ng-include="'views/team-page/first.html'"></div>
+					</div>
 			</div>
 		</div>
 	</div>
