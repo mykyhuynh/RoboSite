@@ -42,6 +42,13 @@
     // vm.slides = slides;
     // vm.dots = dots;
 
+ vm.events = [
+        {image: 'essence.jpg', description: 'Image 00', title: 'Tippecanoe'},
+        {image: 'essence.jpg', description: 'Image 01', title: 'Perry'},
+        {image: 'essence.jpg', description: 'Image 04', title: 'State'},
+        {image: 'essence.jpg', description: 'Image 02', title: 'Worlds'}
+    ]
+
     console.log(vm.images);
 
     vm.setCurrentSlideIndex = setCurrentSlideIndex;

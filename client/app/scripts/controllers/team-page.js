@@ -23,9 +23,9 @@
     .controller('TeamPageCtrl', TeamPageCtrl);
 
     //all the stuff you want
-  TeamPageCtrl.$inject = ['$scope', 'Movie', 'People'];
+  TeamPageCtrl.$inject = ['$scope', 'Movie', 'People', 'News'];
 
-  function TeamPageCtrl($scope, Movie, People){
+  function TeamPageCtrl($scope, Movie, People, News){
   //example
     var vm = $scope;
 
@@ -45,6 +45,8 @@
 
 	//student stuff
 	vm.peopleObject = People.getList().$object;
+
+  vm.newsObject = People.getList().$object;
 
   }
 })();

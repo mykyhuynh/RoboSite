@@ -4,33 +4,85 @@
 	border-top-right-radius: 0px;
 	border-top-left-radius: 0px;
 ">
-	<h2 class="left noSpace-top">
+	<h2 class="left noSpace-top bank" style="font-size: 22px;">
 		Sponsors
 	</h2>
-	<hr>
-	<h2 class="left">
-		Gold
-	</h2>
+
+
+<!-- ==============================title================== -->
+  <div class="title-bar moreSpace-bottom moreSpace">
+      <div class="middle-box">
+        <p class="bank" style="font-size: 19px; color: white;">Title</p>
+      </div>
+  </div>
+	<div class="row">
+		<ul class="col-sm-3 col-md-6 col-lg-4 noDot" ng-repeat="title in titles">
+			<li class="img-box">
+				<img src="images/sponsors/{{ title.image }}" class="img" />
+			</li>
+		</ul>
+	</div>
+
+
+
+<!-- ===========================platinum=================== -->
+  <div class="title-bar moreSpace-bottom moreSpace">
+      <div class="middle-box">
+        <p class="bank" style="font-size: 19px; color: white;">Platinum</p>
+      </div>
+  </div>
+	<div class="row">
+		<ul class="col-sm-3 col-md-6 col-lg-4 noDot" ng-repeat="platinum in platinums">
+			<li class="img-box">
+				<img src="images/sponsors/{{ platinum.image }}" class="img" />
+			</li>
+		</ul>
+	</div>
+
+
+
+
+
+<!-- ===========================gold=================== -->
+  <div class="title-bar moreSpace-bottom moreSpace">
+      <div class="middle-box">
+        <p class="bank" style="font-size: 19px; color: white;">Gold</p>
+      </div>
+  </div>
 	<div class="row">
 		<ul class="col-sm-3 col-md-6 col-lg-4 noDot" ng-repeat="gold in golds">
 			<li class="img-box">
-				<img src="images/sponsors/gold/{{ gold.image }}" class="img" />
+				<img src="images/sponsors/{{ gold.image }}" class="img" />
 			</li>
 		</ul>
 	</div>
-	<hr>
-	<h2 class="left">
-		2017 Sponsors
-	</h2>
+
+
+
+
+
+<!-- ===========================silver=================== -->
+  <div class="title-bar moreSpace-bottom moreSpace">
+      <div class="middle-box">
+        <p class="bank" style="font-size: 19px; color: white;">Gold</p>
+      </div>
+  </div>
 	<div class="row">
-		<ul class="col-sm-3 col-md-6 col-lg-4 noDot" ng-repeat="gold in Sponsors">
-			<li class="">
-				<img src="images/sponsors/{{ gold.image }}" height="200px" width="200px" />
+		<ul class="col-sm-3 col-md-6 col-lg-4 noDot" ng-repeat="silver in silvers">
+			<li class="img-box">
+				<img src="images/sponsors/{{ silver.image }}" class="img" />
 			</li>
 		</ul>
 	</div>
-</div>
-  <div class="row marketing noSpace-top gray margin-left last-radius">
+
+
+
+
+
+
+
+
+  <div class="row marketing noSpace-top gray margin-left last-radius  news-box">
     <p class="right-image">
       <button class="sponBox"><h2>Sponsor <br> Us</h2></button>
     </p>

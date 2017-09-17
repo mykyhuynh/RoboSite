@@ -69,10 +69,32 @@
               <ul class="nav navbar-nav" ng-init="selectedTab = 'home'">
                 <li ng-class="{'active':selectedTab === 'home'}" ng-click="selectedTab = 'home'"><a href="#!/"><span class="bank">Home</span></a></li>
                 <li ng-class="{'active':selectedTab === 'movies'}" ng-click="selectedTab = 'movies'"><a ng-href="#!/team-page"><span class="bank">Team</span></a></li>
-                <li ng-class="{'active':selectedTab === 'sponsors'}" ng-click="selectedTab = 'sponsors'"><a ng-href="#!/sponsors"><span class="bank">Sponsors</span></a></li>
+<!--                 <li ng-class="{'active':selectedTab === 'sponsors'}" ng-click="selectedTab = 'sponsors'"><a ng-href="#!/sponsors"><span class="bank">Sponsors</span></a></li> -->
+
+
+                <li ng-class="{'active':selectedTab === 'sponsors'}" ng-click="selectedTab = 'sponsors'">
+                  <a type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="bank season-nav a-atts">Sponsors
+                    <span class="glyphicon glyphicon-triangle-bottom"></span> 
+                    </span>
+                  </a>
+                  <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item bank" href="#">Action</a>
+                    <br>
+                    <a class="dropdown-item bank" href="#">Another action</a>
+                    <a class="dropdown-item bank" href="#">Something else here</a>
+                  </div> -->
+                  <ul class="dropdown-menu bank" aria-labelledby="dropdownMenuButton">
+                    <li><a ng-href="#!/sponsors">Sponsor List</a></li>
+                    <li><a ng-href="#!/become">Become a Sponsor</a></li>
+                    <!-- <li><a href="#!/"></a></li> -->
+                  </ul>
+                </li>
+
+
                 <li ng-class="{'active':selectedTab === 'media'}" ng-click="selectedTab = 'media'"><a ng-href="#!/media"><span class="bank">Media</span></a></li>
                 <li ng-class="{'active':selectedTab === 'resources'}" ng-click="selectedTab = 'resources'"><a ng-href="#!/resources"><span class="bank">Resources</span></a></li>
-                <li ng-class="{'active':selectedTab === 'first'}" ng-click="selectedTab = 'first'"><a ng-href="#!/first"><span class="bank">FIRST</span></a></li>
+                <li ng-class="{'active':selectedTab === 'first'}" ng-click="selectedTab = 'first'"><a ng-href="#!/events"><span class="bank">Events</span></a></li>
                 <!-- <li ng-class="{'active':selectedTab === 'bot'}" ng-click="selectedTab = 'bot'"><a ng-href="#!/">
                   <div class="">
                     <button class="bank" style="border: none;" type="button" id="dropdownMenuButton" data-toggle="dropdown" href="#!/" aria-haspopup="true" aria-expanded="false">
@@ -100,7 +122,7 @@
                   </div> -->
                   <ul class="dropdown-menu bank" aria-labelledby="dropdownMenuButton">
                     <li><a ng-href="#!/seasons">2016-2017</a></li>
-                    <li><a href="#!/">2017-2018</a></li>
+                    <li><a ng-href="#!/2017-2018">2017-2018</a></li>
                     <!-- <li><a href="#!/"></a></li> -->
                   </ul>
                 </li>
@@ -218,6 +240,8 @@
         <script src="scripts/controllers/reach.js"></script>
         <script src="scripts/controllers/photo.js"></script>
         <script src="scripts/controllers/seasons.js"></script>
+        <script src="scripts/controllers/become.js"></script>
+        <script src="scripts/controllers/events.js"></script>
         <!-- endbuild -->
 
       <!-- ============slider scripts ========= -->

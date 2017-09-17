@@ -38,6 +38,14 @@
         {image: 'ycc.jpeg', description: 'Image 05'}
     ]
 
+    vm.silvers = [
+      {image: 'bc.jpeg', description: 'Image 00'},
+    ]
+
+    vm.titles = [
+        {image: 'bc.jpeg', description: 'Image 00'},
+    ]
+
     vm.Sponsors = [
         {image: 'pp.jpg', description: 'Image 00'}
     ]

@@ -23,23 +23,18 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
-      })
       .when('/movies', {
-        templateUrl: 'views/movies.html',
+        templateUrl: 'views/team-page/movies.html',
         controller: 'MoviesCtrl',
         controllerAs: 'movies'
       })
       .when('/movie/:id', {
-        templateUrl: 'views/movie-view.html',
+        templateUrl: 'views/team-page/movie-view.html',
         controller: 'MovieViewCtrl',
         controllerAs: 'movieView'
       })
       .when('/peopleT', {
-        templateUrl: 'views/peoplet.html',
+        templateUrl: 'views/team-page/peoplet.html',
         controller: 'PeopletCtrl',
         controllerAs: 'peopleT'
       })
@@ -69,7 +64,7 @@ angular
         controllerAs: 'resources'
       })
       .when('/first', {
-        templateUrl: 'views/first.html',
+        templateUrl: 'views/team-page/first.html',
         controller: 'FirstCtrl',
         controllerAs: 'first'
       })
@@ -88,20 +83,30 @@ angular
         controller: 'ReachCtrl',
         controllerAs: 'reach'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
-      })
       .when('/Photo', {
         templateUrl: 'views/media/photo.html',
         controller: 'PhotoCtrl',
         controllerAs: 'Photo'
       })
       .when('/seasons', {
-        templateUrl: 'views/seasons.html',
+        templateUrl: 'views/seasons/2016-17/seasons.html',
         controller: 'SeasonsCtrl',
         controllerAs: 'seasons'
+      })
+      .when('/2017-2018', {
+        templateUrl: 'views/seasons/2017-18/seasons.html',
+        controller: 'SeasonsCtrl',
+        controllerAs: 'seasons'
+      })
+      .when('/become', {
+        templateUrl: 'views/become.html',
+        controller: 'BecomeCtrl',
+        controllerAs: 'become'
+      })
+      .when('/events', {
+        templateUrl: 'views/team-page/events.html',
+        controller: 'EventsCtrl',
+        controllerAs: 'events'
       })
       .otherwise({
         redirectTo: '/'
@@ -146,6 +151,19 @@ angular
   })
   .factory('PhoTo', function(PhotoRestangular) {
     return PhotoRestangular.service('photo');
+  })
+
+
+    //Photo setup
+    .factory('NewsRestangular', function(Restangular) {
+    return Restangular.withConfig(function(RestangularConfigurer) {
+      RestangularConfigurer.setRestangularFields ({
+        id: '_id'
+      });
+    });
+  })
+  .factory('News', function(NewsRestangular) {
+    return NewsRestangular.service('news');
   })
 
   // $scope.myStyle = {

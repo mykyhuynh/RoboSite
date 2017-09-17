@@ -1,11 +1,7 @@
-  <div class="container-fluid slider noSpace">
+<!--   <div class="container-fluid slider noSpace">
     <img ng-repeat="image in images" class="slide rotate nonDraggableImage blur"
          ng-hide="!isCurrentSlideIndex($index)" ng-src="{{image.title}}">
 
-        <!-- <a class="arrow prev" href="#!/" ng-click="callNext()"></a>
-        <a class="arrow next" href="#!/" ng-click="nextSlide()"></a> -->
-
-        <!-- image size is 900x300 -->
     <nav class="slide-nav">
       <div class="slide-wrapper">
         <ul class="dots">
@@ -19,4 +15,94 @@
 
     <button ng-click="callNext()">hello</button>
 
+  </div> -->
+
+
+
+          <!-- <a class="arrow prev" href="#!/" ng-click="callNext()"></a>
+        <a class="arrow next" href="#!/" ng-click="nextSlide()"></a> -->
+
+        <!-- image size is 900x300 -->
+
+
+<!-- <div class="jumbotron white noSpace" style="
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+">
+  <h2 class="left noSpace-top">
+    Sponsors
+  </h2>
+  <hr>
+  <h2 class="left">
+    Gold
+  </h2>
+  <div class="row">
+    <ul class="col-md-3 noDot" ng-repeat="event in events">
+      <li class="img-box">
+        <img src="images/layout/{{ event.image }}" class="img" />
+      </li>
+    </ul>
   </div>
+  <hr>
+</div>
+  <div class="row marketing noSpace-top gray margin-left last-radius">
+    <p class="right-image">
+      <button class="sponBox"><h2>Sponsor <br> Us</h2></button>
+    </p>
+    <div class="words-left">
+
+      <h4><strong>Wanna be a Sponsor?</strong></h4>
+      <p>
+        Team 868 owes all of its success and sustainability to its generous sponsors. The sponsors recognize that they are making a positive investment in the future and are donating to a team that is part of an outstanding organization. 
+We thank all of our sponsors for their engi  
+      </p>
+    </div>
+  </div> -->
+
+
+<p class="moreSpace">
+  <div class="">
+  <div class="title-bar noSpace">
+    <div class="container-fluid noSpace-top">
+      <div class="middle-box">
+        <p class="bank" style="font-size: 19px; color: white;">2017 Season</p>
+      </div>
+    </div>
+  </div>
+  <div class="row marketing white moreSpace noSpace noSpace-top news-box">
+      <div class="container-fluid words-left" style="width: 800px; height: 300px;">
+
+            <span class="noSpace-top noSpace" style="text-align: left;"><!-- 
+              <h2 class="noSpace-top bank" style="font-size: 19px; color: #000000;">Accomplished :</h2> -->
+
+<!--                 <ul class="moreSpace basic">
+                  <li>Gears on robot</li>
+                  <li>Progress on app</li>
+                  <li>Chairmens submitted</li>
+                  <li>alex got a haircut</li>
+                </ul> -->
+                <ul class="col-md-3 noDot" ng-repeat="event in events">
+                  <li> 
+                    <div class="foo">
+                      <img src="images/layout/{{ event.image }}" class="img" />
+                    <div class="overlay"> 
+                      <div class="text">{{ event.title }}</div>
+                    </div>  
+                    </div>
+                  </li>
+                </ul>
+              </span>
+
+      </div>
+<!--         <p class="right-image news-img-box">
+          <img class="news-img" src="images/team-photos/penny.jpg" alt="I'm Yeoman">
+        </p> -->
+  </div>
+</div>
+</p>
+
+
+
+

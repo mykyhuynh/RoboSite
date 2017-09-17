@@ -1,0 +1,36 @@
+<div class="jumbotron white" style="border-radius: 0px;">
+
+	<div class="tabbable tabs-left">
+		<ul class="nav nav-tabs bank" ng-init="selectedTab = 'home'">
+			<li role="presentation" ng-class="{'active': selectedTab == 'home'}">
+				<a ng-click="selectedTab = 'home'">NewsLetter</a>
+			</li>
+		  	<li role="presentation" ng-class="{'active': selectedTab == 'Mentors'}">
+				<a ng-click="selectedTab = 'Mentors'">Robot</a>
+			</li>
+			<li role="presentation" ng-class="{'active': selectedTab == 'students'}">
+				<a ng-click="selectedTab = 'students'">Media</a>
+			</li>
+		</ul>
+
+		<div class="tab-content">
+			<div ng-switch="selectedTab">
+				<div ng-switch-when="home">
+
+						<!-- take not that i had to essentially define the movies controller inside the team-page controller -->
+						<div ng-include src="'views/seasons/2017-18/home.html'"></div>
+					</div>
+				<div ng-switch-when="Mentors">
+
+						<!-- take not that i had to essentially define the movies controller inside the team-page controller -->
+						<div ng-include="'views/movies.html'"></div>
+					</div>
+				<div ng-switch-when="students">
+
+						<!-- take not that i had to essentially define the movies controller inside the team-page controller -->
+						<div ng-include="'views/peopleT.html'"></div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
