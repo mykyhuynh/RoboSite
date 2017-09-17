@@ -117,7 +117,7 @@
 
 <!--   <iframe class="moreSpace" ng-init="foo = '{{ news.video }}'" width="785" height="400" ng-src="setUrl(foo)" frameborder="0" allowfullscreen></iframe> -->
 
-  <iframe class="moreSpace" width="785" height="400" ng-src="{{ trustSrc(news.video) }}" frameborder="0" allowfullscreen></iframe>
+  <iframe class="moreSpace" width="785" height="400" ng-src="{{ getIframeSrc(news.video) }}" frameborder="0" allowfullscreen></iframe>
 
   <div class="row marketing white moreSpace noSpace noSpace-top news-box">
       <div class="container-fluid words-left" style="width: 600px;">

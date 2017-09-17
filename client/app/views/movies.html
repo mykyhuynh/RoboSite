@@ -1,0 +1,111 @@
+<div class="jumbotron white" style="border-radius: 0px;">
+	<!-- <ul class="nav nav-tabs" ng-init="selectedTab = 'home'">
+	  <li role="presentation" ng-class="{'active':selectedTab === 'home'}" ng-click="selectedTab = 'home'"><a href="#!/team-page">Home</a></li>
+	  <li role="presentation" ng-class="{'active':selectedTab === 'movies'}" ng-click="selectedTab = 'movies'"><a href="#!/movies">Movies</a></li>
+	  <li role="presentation" ng-class="{'active':selectedTab === 'students'}" ng-click="selectedTab = 'students'"><a href="#">students</a></li>
+	  <li role="presentation" class="dropdown">
+	    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+	      Dropdown <span class="caret"></span>
+	    </a>
+	    <ul class="dropdown-menu">
+	      ...
+	    </ul>
+	  </li>
+	  ...
+	</ul> -->
+<!-- <a class="btn btn-primary" href="/#!/create/movie"><span class="glyphicon glyphicon-plus"></span>Create student</a> -->
+<!-- <div class="jumbotron">
+	<table class="table table-striped">
+		<thead>
+			<th>Name</th>
+			<th>Students</th>
+		</thead>
+		<tbody>
+			<tr ng-repeat="movie in movieObject">
+				<td><a ng-href="/#!/movie/{{ movie._id }}">{{ movie.title }}</a></td>
+				<td><a ng-href="/#!/movie/{{ movie._id }}"  ng-if="$even">{{ movie.title }}</a></td>
+				<td>
+					<div class="button-group">
+						<a ng-href="/#!/movie{{ movie._id }}/edit" class="btn btn-default">
+							<span class="glyphicon glyphicon-edit"></span>
+						<a ng-href="/#!/movie/{{ movie._id }}/delete" class="btn btn-danger">
+							<span class="glyphicon glyphicon-remove-circle"></span>
+						</a>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div> -->
+
+	<!-- image size 210x240 -->
+  <div class="row">
+    <ul class="col-xs-6 col-md-6" ng-repeat="movie in movieObject">
+    	<li class="thumbnail">
+    		<a ng-href="/#!/movie/{{ movie._id }}" class="noDeck moreSpace" ng-click="selectedTab = '{{ movie._id }}'" style="padding-top: 20px;">	
+    			<img class="moreSpace" src="images/team-photos/{{ movie.imaGe }}" height="257px" width="200px" />
+    		</a>
+    			<h3>{{ movie.title }}</h3>
+    	</li>
+    </ul>
+  </div>
+
+<!--   <div class="row">
+    <ul class="col-xs-12 col-md-12" ng-repeat="mentor in mentors">
+    	<li class="thumbnail">
+    		<img class="moreSpace" src="images/{{ mentor.image }}" height="10px" width="200px" />
+    		{{ mentor.description }}
+    	</li>
+    </ul>
+  </div> -->
+</div>
+<!-- <div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="..." alt="...">
+    </a>
+  </div>
+  ...
+</div> -->
+<!-- <script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script> -->
+
+
+
+
