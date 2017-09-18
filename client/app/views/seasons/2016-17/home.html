@@ -39,65 +39,6 @@
         </div>
 
   </div> --> 
-<p class="moreSpace">
-  <!-- to get this to work replace watch?v= with embed/ -->
-<div class="">
-  <div class="title-bar noSpace">
-    <div class="container-fluid noSpace-top">
-      <div class="middle-box">
-        <p class="bank" style="font-size: 19px; color: white;">Week 1 update!</p>
-      </div>
-    </div>
-  </div>
-  <div class="row marketing white moreSpace noSpace noSpace-top news-box">
-      <div class="container-fluid words-left" style="width: 600px;">
-            <p class="basic noSpace">In “FIRST STEAMWORKS”, robots had to shoot wiffleballs representing 'fuel' into a simulated boiler which transferred 'steam' into an 'airship' in the middle of the field. Each alliance had one airship, which they pressurized with steam from the boiler and loaded with plastic gears from the field in order to spin up rotors and 'take flight.' At the end of the match, robots climbed and hung on ropes attached to the airship for additional points.</p> 
-            <br>
-            <span class="noSpace-top noSpace" style="text-align: left;">
-              <h2 class="noSpace-top bank" style="font-size: 19px; color: #000000;">Accomplished :</h2>
-
-                <ul class="moreSpace basic">
-                  <li>Gears on robot</li>
-                  <li>Progress on app</li>
-                  <li>Chairmens submitted</li>
-                  <li>alex got a haircut</li>
-                </ul>
-            </span>
-      </div>
-        <p class="right-image news-img-box">
-          <img class="news-img" src="images/team-photos/penny.jpg" alt="I'm Yeoman">
-        </p>
-  </div>
-</div>
-
-
-<div class="">
-  <div class="title-bar noSpace">
-    <div class="container-fluid noSpace-top">
-      <div class="middle-box">
-        <p class="bank" style="font-size: 19px; color: white;">Tippecanoe!</p>
-      </div>
-    </div>
-  </div>
-  <div class="row marketing white moreSpace noSpace noSpace-top news-box">
-      <div class="container-fluid words-left" style="width: 600px;">
-            <p class="basic noSpace">iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p> 
-            <br>
-            <span class="noSpace-top noSpace" style="text-align: left;">
-              <h2 class="noSpace-top bank" style="font-size: 19px; color: #000000;">Accomplished :</h2>
-
-                <ul class="moreSpace basic">
-                  <li>1st place</li>
-                  <li>ranked #1 overall</li>
-                  <li>Won cheering award</li>
-                </ul>
-            </span>
-      </div>
-        <p class="right-image news-img-box">
-          <img class="news-img" src="images/layout/essence.jpg" alt="I'm Yeoman">
-        </p>
-  </div>
-</div>
 
 
 
@@ -109,6 +50,11 @@
       </div>
     </div>
   </div>
+
+<!--   <iframe class="moreSpace" ng-init="foo = '{{ news.video }}'" width="785" height="400" ng-src="setUrl(foo)" frameborder="0" allowfullscreen></iframe> -->
+
+  <iframe class="moreSpace" width="785" height="400" ng-src="{{ trustSrc(news.video) }}" frameborder="0" allowfullscreen></iframe>
+
   <div class="row marketing white moreSpace noSpace noSpace-top news-box">
       <div class="container-fluid words-left" style="width: 600px;">
             <p class="basic noSpace">{{ news.info }}</p> 

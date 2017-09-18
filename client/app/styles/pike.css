@@ -9,6 +9,13 @@
         z-index: -2;
 }
 
+.iframe {
+  /*width="785" height="400"*/
+  width: 785px;
+  height: 400px;
+  margin-left: 6px;
+}
+
 /*===========links===========*/
 
 a {
@@ -135,7 +142,7 @@ a:hover, a:visited, a:link, a:active
 
 .title-bar {
     height: 25px;
-    width: 100%;
+    width: 102%;
     background-color: #C61436;
     padding-left: 40px;
     padding-right: 20px;
@@ -230,6 +237,7 @@ a {
 
 .moreSpace {
 	margin-top: 20px;
+  padding-top: 0px;
 }
 
 .moreSpace-bottom {
@@ -539,9 +547,18 @@ NAV
 	padding-left: 30px;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	height: 150px;
+	height: 100%;
 	width: 500px;
 	float: left;
+}
+
+.i-info {
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 100%;
+  width: 94%;
+  float: left;
 }
 
 
@@ -808,6 +825,22 @@ img.hover-shadow {
   max-width: 250px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
