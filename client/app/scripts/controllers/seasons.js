@@ -73,6 +73,15 @@
 
     console.log(urls);
 
+
+//     $scope.hasRole = function(role){
+//      var indexOfRole = $scope.roles.indexOf(role); // or whatever your object is instead of $scope.roles
+//      if (indexOfRole === -1)
+//           return false;
+//      else
+//           return true;
+// }
+
      // console.log(movieObject);
 
 

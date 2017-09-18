@@ -106,7 +106,7 @@
 
 
 <div ng-repeat="news in newsObject | filter : {year: '2017'} : true">
-  <div ng-init="pushDomain(news.video)" class="title-bar noSpace">
+  <div ng-init="pushDomain(news.video)" class="title-bar moreSpace">
     <div class="container-fluid noSpace-top">
       <div class="middle-box">
         <p class="bank" style="font-size: 19px; color: white;">{{ news.title }}</p>
@@ -119,26 +119,53 @@
 <div ng-repeat="url in urls" ng-show="$index % urls.length == $parent.$index">
 <!-- <div ng-init="myIndex()" ng-if="$index == index"> -->
   <!-- <div ng-click="pushDomain(url.domain)"> -->
+
+
+  <!-- ==================checks if the domain key exists======================== -->
+  <span ng-if="url.domain">
     <iframe class="moreSpace iframe" ng-src="{{ url.domain }}" frameborder="0" allowfullscreen></iframe>
     <!-- <div ng-init="deleteDomain(url.domain)"></div> -->
-  </div>
-<!-- </div> -->
+  </span>
+</div>
 <div class="row marketing white moreSpace noSpace noSpace-top news-box">
-      <div class="container-fluid words-left" style="width: 600px;">
+    <span ng-if="!news.image">
+      <div class="container-fluid i-info">
             <p class="basic noSpace">{{ news.info }}</p>
             <br>
-            <span class="noSpace-top noSpace" style="text-align: left;">
+            <span ng-if="news.list[0]">
               <h2 class="noSpace-top bank" style="font-size: 19px; color: #000000;">Accomplished :</h2>
 
-                <ul class="moreSpace basic">
+              
+                <ul class="moreSpace basic" style="padding-bottom: 20px; height: 100%;">
                   <li>{{ news.list[0] }}</li>
                   <li>{{ news.list[1] }}</li>
+                  <li>{{ news.list[2] }}</li>
                 </ul>
             </span>
       </div>
+    </span>
+    <span ng-if="news.image">
+      <div class="container-fluid words-left" style="width: 570px; padding-bottom: 0px;">
+            <p class="basic noSpace">{{ news.info }}</p>
+            <br>
+            <!-- <span class="noSpace-top noSpace" style="text-align: left;" ng-if="url.list[1]"> -->
+            <span ng-if="news.list[0]">
+              <h2 class="noSpace-top bank" style="font-size: 19px; color: #000000;">Accomplished :</h2>
+
+              
+                <ul class="moreSpace basic" style="padding-bottom: 20px; height: 100%;">
+                  <li>{{ news.list[0] }}</li>
+                  <li>{{ news.list[1] }}</li>
+                  <li>{{ news.list[2] }}</li>
+                </ul>
+            </span>
+      </div>
+    </span>
+      <span ng-if="news.image">
         <p class="right-image news-img-box">
-          <img class="news-img" src="images/team-photos/{{ news.image }}" alt="I'm Yeoman">
+          <img class="news-img" src="images/team-photos/{{ news.image }}">
         </p>
+      </span>
   </div>
 </div>
 
@@ -177,7 +204,7 @@
   </div>
 </div> -->
 
-</p>
+<!-- </p> -->
 <!-- <h2>The Robodevils</h2>
 <hr>
 <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.""At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
