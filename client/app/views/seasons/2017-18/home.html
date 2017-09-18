@@ -39,8 +39,7 @@
         </div>
 
   </div> --> 
-<p class="moreSpace">
-  <!-- to get this to work replace watch?v= with embed/ -->
+<!-- <p class="moreSpace">
 <div class="">
   <div class="title-bar noSpace">
     <div class="container-fluid noSpace-top">
@@ -102,12 +101,12 @@
           <img class="news-img" src="images/layout/essence.jpg" alt="I'm Yeoman">
         </p>
   </div>
-</div>
+</div> -->
 
 
 
 <div ng-repeat="news in newsObject | filter : {year: '2017'} : true">
-  <div class="title-bar noSpace">
+  <div ng-init="pushDomain(news.video)" class="title-bar noSpace">
     <div class="container-fluid noSpace-top">
       <div class="middle-box">
         <p class="bank" style="font-size: 19px; color: white;">{{ news.title }}</p>
@@ -117,11 +116,16 @@
 
 <!--   <iframe class="moreSpace" ng-init="foo = '{{ news.video }}'" width="785" height="400" ng-src="setUrl(foo)" frameborder="0" allowfullscreen></iframe> -->
 
-  <iframe class="moreSpace" width="785" height="400" ng-src="{{ getIframeSrc(news.video) }}" frameborder="0" allowfullscreen></iframe>
-
-  <div class="row marketing white moreSpace noSpace noSpace-top news-box">
+<div ng-repeat="url in urls" ng-show="$index % urls.length == $parent.$index">
+<!-- <div ng-init="myIndex()" ng-if="$index == index"> -->
+  <!-- <div ng-click="pushDomain(url.domain)"> -->
+    <iframe class="moreSpace iframe" ng-src="{{ url.domain }}" frameborder="0" allowfullscreen></iframe>
+    <!-- <div ng-init="deleteDomain(url.domain)"></div> -->
+  </div>
+<!-- </div> -->
+<div class="row marketing white moreSpace noSpace noSpace-top news-box">
       <div class="container-fluid words-left" style="width: 600px;">
-            <p class="basic noSpace">{{ news.info }}</p> 
+            <p class="basic noSpace">{{ news.info }}</p>
             <br>
             <span class="noSpace-top noSpace" style="text-align: left;">
               <h2 class="noSpace-top bank" style="font-size: 19px; color: #000000;">Accomplished :</h2>

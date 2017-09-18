@@ -41,7 +41,57 @@
      	return string;
      }
 
+
+    var urls = [];
+
+    vm.setUrl = function (value) {
+      return $sce.trustAsResourceUrl(value);
+    }
+
+
+    vm.pushDomain = function (value) {
+          urls.push({domain: $sce.trustAsResourceUrl(value)});
+    }
+
+        vm.deleteDomain = function (value) {
+          urls.splice({domain: (value)});
+    }
+    
+    // urls.push({domain: $sce.trustAsResourceUrl("https://www.youtube.com/embed/O0EkhUnDuG0?rel=0")});
+    
+    $scope.urls = urls;
+    
+    vm.testAlert = function (value) {
+        alert(value);
+    }
+
+    vm.myIndex = function() {
+      var index = -1;
+      index++;
+      console.log(index);
+    }
+
+    console.log(urls);
+
      // console.log(movieObject);
+
+
+     // vm.news = {};
+     // News.one($routeParams.id).get().then(function(news) {
+     //    vm.news = news;
+     //    vm.saveNews = function(value) {
+     //      var foo = $sce.trustAsResourceUrl(value);
+     //      $scope.news.save().then(function() {
+     //        $location.path('/news/' + routeParams.id);
+     //      })
+     //    }
+     // });
+
+
+
+
+
+
 
   }
 })();
