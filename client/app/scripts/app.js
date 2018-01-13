@@ -108,6 +108,16 @@ angular
         controller: 'EventsCtrl',
         controllerAs: 'events'
       })
+      // .when('/photoPage/:match', {
+      //   templateUrl: 'views/media/photoPage.html',
+      //   controller: 'PPageCtrl',
+      //   controllerAs: 'ppage'
+      // })
+      .when('/photo/:match', {
+        templateUrl: 'views/media/photopage.html',
+        controller: 'PhotopageCtrl',
+        controllerAs: 'photoPage'
+      })
       .otherwise({
         redirectTo: '/'
       });

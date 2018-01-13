@@ -15,7 +15,7 @@ var NewsSchema = new mongoose.Schema({
 	},
 	list: {
 		type: [String],
-		required: true
+		required: false
 	},
 	year: {
 		type: String,

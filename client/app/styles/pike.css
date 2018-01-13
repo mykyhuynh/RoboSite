@@ -7,6 +7,14 @@
         margin-top: 0px;
         padding-top: 0px;
         z-index: -2;
+        /*===========test this min hite on other laptop====*/
+        min-height: 93vh;
+}
+
+.frc-class {
+  margin-top: -200px;
+  width: 510px;
+  height:230px;
 }
 
 .iframe {
@@ -14,6 +22,14 @@
   width: 785px;
   height: 400px;
   margin-left: 6px;
+}
+
+.footer-margin {
+  width: 100vw;
+
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 
 /*===========links===========*/
@@ -97,6 +113,12 @@ a:hover, a:visited, a:link, a:active
   width: 85%;
 }
 
+.fondue {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+ 
 .foo:hover img {
   cursor: pointer;
 }
@@ -142,7 +164,7 @@ a:hover, a:visited, a:link, a:active
 
 .title-bar {
     height: 25px;
-    width: 102%;
+    width: 97%;
     background-color: #C61436;
     padding-left: 40px;
     padding-right: 20px;
@@ -223,10 +245,10 @@ a {
 }
 
 .last-radius {
-	border-bottom-right-radius: 6px;
-	border-bottom-left-radius: 6px;
-	border-top-right-radius: 0px;
-	border-top-left-radius: 0px;
+	border-bottom-right-radius: 6px !important;
+	border-bottom-left-radius: 6px !important;
+	border-top-right-radius: 0px !important;
+	border-top-left-radius: 0px !important;
 }
 
 .no-radius {
@@ -237,6 +259,11 @@ a {
 
 .moreSpace {
 	margin-top: 20px;
+  padding-top: 0px;
+}
+
+.superMoreSpace {
+  margin-top: 60px;
   padding-top: 0px;
 }
 
@@ -320,11 +347,8 @@ a:hover img {
 .middle-box {
     background-color: none;
     height: 20px;
-    width: 200px;
-    position: relative;
-    top: 0px;
-    left: 37%;
-
+    width: 300px;
+    margin: 0 auto;
 }
 
 .foot-box {

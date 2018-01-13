@@ -111,11 +111,11 @@
     var INTERVAL = 3000;
     
     vm.slides = [
-    	{image: 'sliderImage2.png', description: 'Image 00'},
-   	    {image: 'slideImage1.jpg', description: 'Image 01'},
-        {image: 'space jam.jpg', description: 'Image 04'},
-        {image: 'sliderImage3.png', description: 'Image 02'},
-        {image: 'kobeeee.jpg', description: 'Image 03'}
+    	{image: 'slider1.png', description: 'Image 00'},
+   	    {image: 'slider4.png', description: 'Image 01'},
+        {image: 'eriel.png', description: 'Image 03'},
+        {image: 'slider2.png', description: 'Image 04'},
+        {image: 'slider3.png', description: 'Image 02'}
     ];
 
     //index stuff continued
