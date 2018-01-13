@@ -30,20 +30,32 @@
     var vm = $scope;
 
     vm.golds = [
-        {image: 'bc.jpeg', description: 'Image 00'},
-        {image: 'ci.jpeg', description: 'Image 01'},
-        {image: 'if.png', description: 'Image 04'},
-        {image: 'rr.png', description: 'Image 02'},
-        {image: 'wj.png', description: 'Image 03'},
-        {image: 'ycc.jpeg', description: 'Image 05'}
+        {image: 'cgr.jpg', description: 'Chip Ganassi'},
+        {image: 'ptef.png', description: 'Pike Education Foundation'},
+        {image: 'ci.jpeg', description: 'Color Inc'},
+        {image: 'ISG.jpg', description: 'Indiana Space Grant'},
+        {image: 'white.jpg', description: 'filler image'},
+        {image: 'ni.png', description: 'National Instruments'}
     ]
 
     vm.silvers = [
-      {image: 'bc.jpeg', description: 'Image 00'},
+      {image: 'UPSH.JPG', description: 'UPS'},
+      {image: 'gp.jpg', description: 'Game Point'}
+
+
+    ]
+
+    vm.plat = [
+      {image: 'ac.jpg', description: 'Abbot'},
+      {image: 'bc.jpeg', description: 'Beckman Couylter'},
+      {image: 'dow.jpg', description: 'Dow'},
+      {image: 'wj.png', description: 'Water Jet Cutting Inc'}
     ]
 
     vm.titles = [
-        {image: 'bc.jpeg', description: 'Image 00'},
+        {image: '3m.jpg', description: '3M'},
+        {image: 'rr.png', description: 'Rolls Royce'},
+        {image: 'ycc.jpeg', description: 'YCC'}
     ]
 
     vm.Sponsors = [

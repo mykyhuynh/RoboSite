@@ -53,7 +53,9 @@
     </div> -->
     <div class="noSpace moreSpace pike-container">
       <div class="container-fluid">
-        <img src="images/layout/1018Supreme.png" width="850" height="200">
+      <center>
+        <img style="margin-left: 20px;" src="images/layout/1018Supreme.png" width="850" height="200">
+      </center>
       </div>
     </div>
     <div class="pike-container">
@@ -86,7 +88,7 @@
                   </div> -->
                   <ul class="dropdown-menu bank" aria-labelledby="dropdownMenuButton">
                     <li><a ng-href="#!/sponsors">Sponsor List</a></li>
-                    <li><a ng-href="#!/become">Become a Sponsor</a></li>
+                    <li><a href="recs/sponsor.pdf" target="_blank">Become a Sponsor</a></li>
                     <!-- <li><a href="#!/"></a></li> -->
                   </ul>
                 </li>
@@ -108,24 +110,21 @@
                   </div></a>
                 </li> -->
 
-                <li ng-class="{'active':selectedTab === 'seasons'}" ng-click="selectedTab = 'seasons'">
+
+
+<!--                 <li ng-class="{'active':selectedTab === 'seasons'}" ng-click="selectedTab = 'seasons'">
                   <a type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span class="bank season-nav a-atts">Seasons
                     <span class="glyphicon glyphicon-triangle-bottom"></span> 
                     </span>
                   </a>
-                  <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item bank" href="#">Action</a>
-                    <br>
-                    <a class="dropdown-item bank" href="#">Another action</a>
-                    <a class="dropdown-item bank" href="#">Something else here</a>
-                  </div> -->
                   <ul class="dropdown-menu bank" aria-labelledby="dropdownMenuButton">
                     <li><a ng-href="#!/seasons">2016-2017</a></li>
                     <li><a ng-href="#!/2017-2018">2017-2018</a></li>
-                    <!-- <li><a href="#!/"></a></li> -->
                   </ul>
-                </li>
+                </li> -->
+
+
                <!--  <li ng-class="{'active':selectedTab === 'seasons'}" ng-click="selectedTab = 'seasons'">
                    <a href="#!/" class="bank season-nav" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
@@ -147,7 +146,7 @@
                     <li><a href="#">JavaScript</a></li>
                   </ul>
                 </li> -->
-                <li ng-class="{'active':selectedTab === 'reach'}" ng-click="selectedTab = 'reach'"><a ng-href="#!/reach"><span class="bank">Outreach</span></a></li>
+                <li ng-class="{'active':selectedTab === 'reach'}" ng-click="selectedTab = 'reach'"><a ng-href="#!/contact"><span class="bank">Contact</span></a></li>
                 <!-- <li ng-class="{'active':selectedTab === 'contact'}" ng-click="selectedTab = 'contact'"><a ng-href="#!/contact"><span class="bank">Contact Us</span></a></li> -->
               </ul>
             </div>
@@ -166,8 +165,8 @@
         <img src="black-panther.png" height="200px" width="250px">
       </div> -->
 
-    <div class="footer footer-color noSpace-top gray">
-      <div class="container-fluid">
+    <div class="footer footer-color gray footer-margin" style="padding-top: 0px; margin-top: 0px; height: 0px;">
+      <div class="container-fluid more">
         <div><!-- <p><span class="glyphicon glyphicon-heart"></span>from da boys an gurls down at the robodevils</p> -->
           <div class="foot-box">
             <div class="image-box float-right">
@@ -187,7 +186,17 @@
             </div>
           </div>
           <div class="foot-words">
-            <p><span class="glyphicon glyphicon-heart"></span>    from da boys an gurls down at the robodevils</p>
+            <div><span><a ng-href="#!/contact">   Contact</a> - </span>
+              <span><a ng-href="#!/events">   Events</a> - </span>
+              <span><a ng-href="#!/resources">   Resources</a> - </span>
+              <span><a ng-href="#!/media">   Media</a></span>
+
+            </div>
+            <br>
+            <p>
+              Made from Scratch by the Members of <strong>Team 1018</strong></p>
+            </p>
+
           </div>
         </div>
       </div>
@@ -242,6 +251,7 @@
         <script src="scripts/controllers/seasons.js"></script>
         <script src="scripts/controllers/become.js"></script>
         <script src="scripts/controllers/events.js"></script>
+        <script src="scripts/controllers/photopage.js"></script>
         <!-- endbuild -->
 
       <!-- ============slider scripts ========= -->

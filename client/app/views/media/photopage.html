@@ -1,0 +1,63 @@
+<div class="moreSpace"">
+  <div class="last-radius">
+    <div class="title-bar noSpace">
+      <div class="container-fluid noSpace-top">
+        <div class="middle-box">
+          <p class="bank" style="font-size: 19px; color: white;">2017 {{event}}</p>
+        </div>
+      </div>
+    </div>
+  <div class="row marketing white moreSpace noSpace-top news-box">
+      <div class="container-fluid words-left" style="width: 800px;">
+
+            <span class="noSpace-top noSpace" style="text-align: left;"><!-- 
+              <h2 class="noSpace-top bank" style="font-size: 19px; color: #000000;">Accomplished :</h2> -->
+
+<!--                 <ul class="moreSpace basic">
+                  <li>Gears on robot</li>
+                  <li>Progress on app</li>
+                  <li>Chairmens submitted</li>
+                  <li>alex got a haircut</li>
+                </ul> -->
+                <ul ng-init="getDots()" class="col-md-4 noDot" ng-repeat="photo in photoObject">
+                  <li>
+                  <!-- | filter : {match: event} : true -->
+                  <!-- photoObject | filter : {match: $parent.{{event}}} : true -->
+                    <!-- <a ng-href="#!/photo/{{ event.match }}"> -->
+                      <div style="height: 200px; width: 200px;">
+                        <center>
+                          <img src="images/photoss/{{ photo.image }}" style="max-width: 200px; max-height: 200px;" />
+                        </center>
+                      </div>
+                    <!-- </a> -->
+                  </li>
+                </ul>
+<!--                         <ul class="dots">
+          <li class="dot" ng-repeat="slide in getDots()" ui-jq="fadeIn">
+              <a href="#!/" ng-class="{'active':isCurrentSlideIndex($index)}"
+              ng-click="setCurrentSlideIndex($index);"></a>
+          </li>
+        </ul> -->
+              </span>
+
+      </div>
+<!--         <p class="right-image news-img-box">
+          <img class="news-img" src="images/team-photos/penny.jpg" alt="I'm Yeoman">
+        </p> -->
+  </div>
+</div>
+
+<!--     <div class="tab-content">
+      <div ng-switch="selectedTab">
+        <div ng-switch-when="match1">
+
+            <div ng-include src="'views/media/photo.html'"></div>
+          </div>
+        <div ng-switch-when="videos">
+
+            <div ng-include="'views/media/videos.html'"></div>
+          </div>
+      </div>
+    </div> -->
+
+</div>

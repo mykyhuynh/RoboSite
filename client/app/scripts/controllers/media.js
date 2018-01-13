@@ -43,10 +43,10 @@
     // vm.dots = dots;
 
  vm.events = [
-        {image: 'essence.jpg', description: 'Image 00', title: 'Tippecanoe'},
-        {image: 'essence.jpg', description: 'Image 01', title: 'Perry'},
-        {image: 'essence.jpg', description: 'Image 04', title: 'State'},
-        {image: 'essence.jpg', description: 'Image 02', title: 'Worlds'}
+        {image: 'maybe2.jpg', description: 'Image 00', match: 'Tippecanoe'},
+        {image: 'maybe4.jpg', description: 'Image 01', match: 'Perry'},
+        {image: 'maybe3.jpg', description: 'Image 04', match: 'State'},
+        {image: 'maybe6.jpg', description: 'Image 02', match: 'Worlds'}
     ]
 
     console.log(vm.images);

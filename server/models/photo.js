@@ -5,11 +5,11 @@ var PhotoSchema = new mongoose.Schema({
 		type: String,
 		required: true 
 	},
-	slide: {
-		type: Number,
+	match: {
+		type: String,
 		required: true
 	},
-	alt: {
+	image: {
 		type: String,
 		required: true
 	}
