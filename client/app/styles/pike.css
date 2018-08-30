@@ -13,8 +13,9 @@
 
 .frc-class {
   margin-top: -200px;
+  margin-right: 500px;
   width: 510px;
-  height:230px;
+  height: 230px;
 }
 
 .iframe {
@@ -110,7 +111,7 @@ a:hover, a:visited, a:link, a:active
 .foo {
   position: relative;
 
-  width: 85%;
+  width: 91%;
 }
 
 .fondue {
@@ -374,7 +375,7 @@ a:hover img {
 }
 
 .margin-left {
-	padding-left: 20px;
+	padding-left: 70px;
 }
 
 /*==================COLORS=================*/
